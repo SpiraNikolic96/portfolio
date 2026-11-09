@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stefan Nikolić | Senior QA Automation Engineer</title>
+    <title>Stefan Nikolić | Full Stack QA Engineer</title>
+    <meta name="description" content="Stefan Nikolić – Full Stack QA Engineer with 5+ years of experience in manual and automated testing of web, mobile, and API-based applications.">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Stefan Nikolić | Full Stack QA Engineer">
+    <meta property="og:description" content="Manual and automated testing of web, mobile, and API-based applications – Java, TypeScript, Selenium, Cypress, Playwright, REST Assured.">
+    <meta property="og:url" content="https://spiranikolic96.github.io/portfolio/">
+    <meta property="og:image" content="https://spiranikolic96.github.io/portfolio/profile.jpg">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='66' font-size='48' font-family='Arial,sans-serif' font-weight='700' text-anchor='middle' fill='%2338bdf8'>SN</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -83,6 +91,12 @@
 
         section {
             margin-bottom: 5rem;
+            scroll-margin-top: 90px;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 3px;
         }
 
         /* Hero Section */
@@ -125,6 +139,13 @@
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
             font-size: 1.05rem;
+        }
+
+        .hero-location {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-top: -0.5rem;
+            margin-bottom: 1rem !important;
         }
 
         .social-links {
@@ -300,6 +321,111 @@
             background-color: var(--accent-hover);
         }
 
+        .email-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .email-text {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .email-text:hover {
+            color: var(--accent-color);
+        }
+
+        .copy-btn {
+            font-family: inherit;
+            font-size: 0.85rem;
+            font-weight: 500;
+            background-color: var(--bg-color);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.4rem 0.8rem;
+            cursor: pointer;
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        .copy-btn:hover,
+        .copy-btn.copied {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        .copy-btn:focus-visible {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 3px;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            margin-left: 0.5rem;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(56, 189, 248, 0.1);
+        }
+
+        /* GitHub note */
+        .note-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--accent-color);
+            padding: 1.75rem 2rem;
+            border-radius: 12px;
+        }
+
+        .note-box p {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+        }
+
+        /* Languages */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .info-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+
+        .info-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .lang-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.4rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .lang-row:last-child {
+            border-bottom: none;
+        }
+
+        .lang-row span:last-child {
+            color: var(--text-secondary);
+        }
+
         footer {
             text-align: center;
             padding: 2rem 0;
@@ -318,6 +444,31 @@
             }
             .exp-header {
                 flex-direction: column;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 0.75rem 1rem;
+            }
+            nav ul {
+                gap: 1.25rem;
+                font-size: 0.9rem;
+            }
+            main {
+                padding: 8.5rem 1.25rem 3rem 1.25rem;
+            }
+            section {
+                scroll-margin-top: 110px;
+            }
+            .experience-card {
+                padding: 1.5rem;
+            }
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 0.75rem;
             }
         }
     </style>
@@ -344,14 +495,15 @@
             <div class="hero-content">
                 <h1>Stefan Nikolić</h1>
                 <h2>Full Stack QA Engineer</h2>
-                <p>Full Stack QA Engineer with 5+ years of experience in manual and automated testing of web, mobile, and API-based applications. Skilled in end-to-end API workflows, integrations, UI testing, and data consistency across connected services. Builds and maintains automated tests with Java, JavaScript, TypeScript, Selenium, Cypress, Playwright, REST Assured, JUnit, and TestNG. Applies Claude and Gemini to support test design and result analysis.</p>
+                <p class="hero-location"><i class="fas fa-location-dot"></i> Serbia</p>
+                <p>Full Stack QA Engineer with 5+ years of experience in manual and automated testing of web, mobile, and API-based applications. Skilled in end-to-end API workflows, integrations, UI testing, and data consistency across connected services. Builds and maintains automated tests with Java, JavaScript, TypeScript, Selenium, Cypress, Playwright, REST Assured, JUnit, and TestNG. Applies Claude and Gemini to support test design and result analysis, always validating AI outputs against real system behavior.</p>
                 <div class="social-links">
-                    <a href="mailto:spiranikolic96@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://linkedin.com/in/stefan-nikolic-spira" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/SpiraNikolic96" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:spiranikolic96@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/stefan-nikolic-spira" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/SpiraNikolic96" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
-            <img src="profile.jpg" alt="Stefan Nikolić" class="hero-img">
+            <img src="profile.jpg" alt="Stefan Nikolić" class="hero-img" width="200" height="200">
         </section>
 
         <!-- Skills Section -->
@@ -382,13 +534,14 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Databases & Storage</h3>
+                    <h3>Databases, Storage & Messaging</h3>
                     <div class="skill-tags">
                         <span class="tag">MongoDB</span>
                         <span class="tag">MySQL</span>
                         <span class="tag">PostgreSQL</span>
                         <span class="tag">Redshift</span>
                         <span class="tag">Azure Blob Storage</span>
+                        <span class="tag">RabbitMQ</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -396,13 +549,19 @@
                     <div class="skill-tags">
                         <span class="tag">Azure DevOps</span>
                         <span class="tag">GitLab CI/CD</span>
-                        <span class="tag">Bitbucket CI/CD</span>
+                        <span class="tag">Bitbucket Pipelines</span>
                         <span class="tag">Jenkins</span>
                         <span class="tag">Docker</span>
+                        <span class="tag">Devtron</span>
+                        <span class="tag">BrowserStack</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Monitoring & Observability</h3>
+                    <div class="skill-tags">
                         <span class="tag">Grafana</span>
                         <span class="tag">Sentry</span>
                         <span class="tag">Dynatrace</span>
-                        <span class="tag">BrowserStack</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -421,6 +580,7 @@
                     <div class="skill-tags">
                         <span class="tag">Git / GitHub</span>
                         <span class="tag">Jira / Confluence</span>
+                        <span class="tag">Trello</span>
                         <span class="tag">A/B Testing</span>
                     </div>
                 </div>
@@ -436,9 +596,9 @@
                 <div class="exp-header">
                     <div>
                         <div class="exp-title">Full Stack QA Engineer</div>
-                        <div class="exp-company">Trip-arc (@AndersenLab | Travel & Hospitality)</div>
+                        <div class="exp-company">Trip-arc · Andersen Lab · Travel & Hospitality</div>
                     </div>
-                    <div class="exp-date">04/2025 – Now</div>
+                    <div class="exp-date">04/2025 – Present</div>
                 </div>
                 <ul class="exp-list">
                     <li>Identified a gradual performance regression by running consistent load tests and comparing results across runs, helping the team isolate the root cause faster.</li>
@@ -461,15 +621,15 @@
                 <div class="exp-header">
                     <div>
                         <div class="exp-title">Full Stack QA Engineer</div>
-                        <div class="exp-company">FinTech Project (@Quantox Technology)</div>
+                        <div class="exp-company">FinTech Project · Quantox Technology · FinTech</div>
                     </div>
                     <div class="exp-date">11/2023 – 04/2025</div>
                 </div>
                 <ul class="exp-list">
                     <li>Developed automated API and UI tests in Java and Selenium to catch defects immediately after code changes, reducing repetitive manual testing.</li>
-                    <li>Validated transaction data integrity across SQL, Redshift, and MySQL, and reviewed Grafana/Sentry dashboards to investigate failures and support root-cause resolution.</li>
+                    <li>Validated transaction data integrity across Redshift and MySQL using SQL queries, and reviewed Grafana/Sentry dashboards to investigate failures and support root-cause resolution.</li>
                     <li>Applied AI tools to organize and compare test results across stages, accelerating reporting while validating outputs against source data.</li>
-                    <li>Ran cross-browser/cross-platform testing with BrowserStack and scheduled automated regression through Bitbucket CI/CD pipelines.</li>
+                    <li>Ran cross-browser/cross-platform testing with BrowserStack and scheduled automated regression through Bitbucket Pipelines.</li>
                 </ul>
                 <div class="tech-stack-used">
                     <span class="mini-tag">Postman</span>
@@ -479,7 +639,7 @@
                     <span class="mini-tag">REST Assured</span>
                     <span class="mini-tag">MySQL</span>
                     <span class="mini-tag">Redshift</span>
-                    <span class="mini-tag">Bitbucket CI/CD</span>
+                    <span class="mini-tag">Bitbucket Pipelines</span>
                     <span class="mini-tag">Grafana</span>
                     <span class="mini-tag">Sentry</span>
                     <span class="mini-tag">BrowserStack</span>
@@ -491,7 +651,7 @@
                 <div class="exp-header">
                     <div>
                         <div class="exp-title">Full Stack QA Engineer</div>
-                        <div class="exp-company">polovniautomobili.com (@Wiser Technology | E-Commerce / Automotive)</div>
+                        <div class="exp-company">Polovni Automobili · Wiser Technology · E-Commerce / Automotive</div>
                     </div>
                     <div class="exp-date">10/2022 – 11/2023</div>
                 </div>
@@ -511,6 +671,7 @@
                     <span class="mini-tag">Cypress</span>
                     <span class="mini-tag">MongoDB</span>
                     <span class="mini-tag">MySQL</span>
+                    <span class="mini-tag">RabbitMQ</span>
                     <span class="mini-tag">Docker</span>
                     <span class="mini-tag">GitLab CI/CD</span>
                     <span class="mini-tag">Jenkins</span>
@@ -523,21 +684,47 @@
                 <div class="exp-header">
                     <div>
                         <div class="exp-title">Manual QA Engineer</div>
-                        <div class="exp-company">FinTech / Logistics Super-app (Ride-hailing, Delivery, Money Transfer)</div>
+                        <div class="exp-company">FinTech / Logistics Project · Super-app (Ride-hailing, Delivery, Money Transfer)</div>
                     </div>
                     <div class="exp-date">04/2021 – 10/2022</div>
                 </div>
                 <ul class="exp-list">
-                    <li>Restored outdated Postman smoke/regression suites and designed performance tests for three business-critical endpoints, covering live and cached responses.</li>
-                    <li>Migrated high-priority API test scenarios from Postman to Playwright/TypeScript, expanding automated coverage.</li>
-                    <li>Integrated Dynatrace logs with Claude and MongoDB to speed up data comparison and defect investigation.</li>
-                    <li>Ran cross-browser/cross-device testing with BrowserStack to validate behavior across platforms before release.</li>
+                    <li>Created and maintained test documentation, including test plans, test cases, and detailed test steps based on product requirements and user stories.</li>
+                    <li>Executed test cases through manual functional, regression, and exploratory testing, and retested resolved issues to confirm fixes before each release.</li>
+                    <li>Wrote clear bug reports with steps to reproduce, expected and actual results, screenshots, and environment details, and followed each defect through to resolution.</li>
+                    <li>Tested web and mobile applications across different browsers, operating systems, and screen sizes, using both BrowserStack and real iOS and Android devices.</li>
+                    <li>Performed A/B testing, verifying that each variant behaved and displayed correctly for its target user group.</li>
+                    <li>Managed tasks and test progress in Jira and Trello, working closely with developers and product owners to clarify requirements and prioritize issues.</li>
                 </ul>
                 <div class="tech-stack-used">
-                    <span class="mini-tag">Postman</span>
-                    <span class="mini-tag">Jira</span>
+                    <span class="mini-tag">Manual Testing</span>
+                    <span class="mini-tag">Test Documentation</span>
+                    <span class="mini-tag">Mobile Testing (iOS / Android)</span>
                     <span class="mini-tag">BrowserStack</span>
                     <span class="mini-tag">A/B Testing</span>
+                    <span class="mini-tag">Jira</span>
+                    <span class="mini-tag">Trello</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Section -->
+        <section id="github">
+            <h2 class="section-title">Code & Learning</h2>
+            <div class="note-box">
+                <p>Client projects I have worked on are covered by NDAs, so their code can't be shared publicly. My GitHub repositories show how I structure test automation, the tools I practice with, and how my approach has grown over time.</p>
+                <a href="https://github.com/SpiraNikolic96?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn"><i class="fab fa-github"></i> View my repositories</a>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section id="languages">
+            <h2 class="section-title">Languages</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="lang-row"><span>English</span><span>Fluent</span></div>
+                    <div class="lang-row"><span>Serbian</span><span>Native</span></div>
+                    <div class="lang-row"><span>Spanish</span><span>Basic</span></div>
                 </div>
             </div>
         </section>
@@ -546,8 +733,13 @@
         <section id="contact">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-box">
-                <p>I am available for remote B2B contracts and freelance collaborations. Let's build quality together!</p>
-                <a href="mailto:spiranikolic96@gmail.com" class="btn"><i class="fas fa-paper-plane"></i> Send Me an Email</a>
+                <p>I am open to remote opportunities, including B2B contracts, freelance projects, and part-time engagements. If your team needs support with manual or automated testing, feel free to get in touch.</p>
+                <div class="email-row">
+                    <a href="mailto:spiranikolic96@gmail.com" class="email-text">spiranikolic96@gmail.com</a>
+                    <button type="button" class="copy-btn" id="copyEmail" aria-label="Copy email address"><i class="far fa-copy"></i> <span>Copy email</span></button>
+                </div>
+                <a href="mailto:spiranikolic96@gmail.com" class="btn"><i class="fas fa-paper-plane"></i> Send me an email</a>
+                <a href="Stefan_Nikolic_QA_CV.pdf" class="btn btn-outline" download><i class="fas fa-file-arrow-down"></i> Download CV</a>
             </div>
         </section>
     </main>
@@ -556,5 +748,44 @@
         <p>&copy; 2026 Stefan Nikolić. Built with precision and passion.</p>
     </footer>
 
+    <script>
+        (function () {
+            var btn = document.getElementById('copyEmail');
+            var email = 'spiranikolic96@gmail.com';
+            var label = btn.querySelector('span');
+            var icon = btn.querySelector('i');
+
+            function showCopied() {
+                label.textContent = 'Copied!';
+                icon.className = 'fas fa-check';
+                btn.classList.add('copied');
+                setTimeout(function () {
+                    label.textContent = 'Copy email';
+                    icon.className = 'far fa-copy';
+                    btn.classList.remove('copied');
+                }, 2000);
+            }
+
+            function fallbackCopy() {
+                var input = document.createElement('textarea');
+                input.value = email;
+                input.setAttribute('readonly', '');
+                input.style.position = 'absolute';
+                input.style.left = '-9999px';
+                document.body.appendChild(input);
+                input.select();
+                try { document.execCommand('copy'); showCopied(); } catch (e) {}
+                document.body.removeChild(input);
+            }
+
+            btn.addEventListener('click', function () {
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(email).then(showCopied, fallbackCopy);
+                } else {
+                    fallbackCopy();
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
